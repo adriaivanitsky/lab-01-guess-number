@@ -1,8 +1,15 @@
 body {
     font-family: 'Rye', cursive;
-    font-size: 180%;
+    font-size: 190%;
     background-color: black;
     color: red;
-    align-items: center;
+    text-align: center;
 }
 
+main {
+    margin: auto;
+}
+
+#guesses-remaining {
+    color: gold;
+}

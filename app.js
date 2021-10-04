@@ -7,13 +7,12 @@ const guessesRemaining = document.getElementById('guesses-remaining');
 
 // set event listeners 
 
-let randomNum = Math.ceil(Math.rondom() * 20);
+let randomNum = Math.ceil(Math.random() * 20);
 let numGuesses = 4;
 
 button.addEventListener('click', ()=>{
   numGuesses--;
-  guessesRemaining.textcontent = numGuesses; 
-
+  guessesRemaining.textContent = numGuesses; 
   if(input === randomNum) {
     result.textContent = 'You win!';
   } else if (guessesRemaining === 0) {
