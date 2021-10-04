@@ -18,15 +18,16 @@
 <body>
     <header><h1>Guess A Number!</h1></header>
     <main>
-   <p>guess a whole number between 1 & 20. <br>
-you have four guesses.</p>
-    <input id="input" type="text" placeholder="666"></input>    
+   <p>guess a whole number between 1 & 20.</p>
+   <p id="white">you have four guesses.</p>
+    <input id="input" type="text" style="text-align: center;"placeholder="666"></input>    
     <button id="button">guess</button>
 
     <span id="result"></span>
     <br>
-    <br>
-    You have <span id="guesses-remaining">4</span> guesses remaining
+    <p id="small">You have <span id="guesses-remaining">4</span> guesses remaining</p>
+
+    <button id="try-again">Try again</button>
     </main>
     <script type="module" src="./app.js"></script>
 </body>

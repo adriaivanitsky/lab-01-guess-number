@@ -13,3 +13,15 @@ main {
 #guesses-remaining {
     color: gold;
 }
+
+#try-again {
+    display: none;
+}
+
+#white {
+    color: white;
+}
+
+#small {
+    font-size: 50%;
+}
