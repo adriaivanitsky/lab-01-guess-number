@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-
+const    
 // initialize global state
 
 // set event listeners 
