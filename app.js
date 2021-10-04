@@ -16,8 +16,10 @@ button.addEventListener('click', ()=>{
     guessesRemaining.textContent = numGuesses; 
     if (input === randomNum) {
         result.textContent = 'You win!';
-    } else if (guessesRemaining === 0) {
+    } else if (numGuesses <= 0) {
         result.textContent = 'You lose :(';
+        button.style.display = 'none';
+        input.style.display = 'none';
         tryAgainButton.style.display = 'inline';
     } else if (input > randomNum){
         result.textContent = 'Too high!';
@@ -30,6 +32,8 @@ button.addEventListener('click', ()=>{
 tryAgainButton.addEventListener('click', ()=>{
     randomNum = Math.ceil(Math.random() * 20);
     numGuesses = 4;
-
+    input.style.display = 'inline';
+    button.style.display = 'inline';
+    result.textContent = '';
 
 });
