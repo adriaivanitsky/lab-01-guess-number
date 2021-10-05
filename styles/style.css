@@ -25,3 +25,7 @@ main {
 #small {
     font-size: 50%;
 }
+
+button {
+    font-family: 'Rye', cursive;
+}
