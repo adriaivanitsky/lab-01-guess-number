@@ -7,23 +7,27 @@ const tryAgainButton = document.getElementById('try-again');
 // initialize global state
 
 // set event listeners 
-
 let randomNum = Math.ceil(Math.random() * 20);
 let numGuesses = 4;
 
+
 button.addEventListener('click', ()=>{
+    let inputNum = Number(input.value);
     numGuesses--;
     guessesRemaining.textContent = numGuesses; 
-    if (input === randomNum) {
+    if (inputNum === randomNum) {
         result.textContent = 'You win!';
+        button.style.display = 'none';
+        input.style.display = 'none';
+        tryAgainButton.style.display = 'inline';
     } else if (numGuesses <= 0) {
         result.textContent = 'You lose :(';
         button.style.display = 'none';
         input.style.display = 'none';
         tryAgainButton.style.display = 'inline';
-    } else if (input > randomNum){
+    } else if (inputNum > randomNum){
         result.textContent = 'Too high!';
-    } else if (input < randomNum){
+    } else if (inputNum < randomNum){
         result.textContent = 'Too low';
     } 
   
